@@ -25,9 +25,10 @@ const types_1 = require("../../util/types");
 let adminController = class adminController {
     login(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const { email } = req.body;
-            if (email !== process.env.admin_account) {
-                const error = new customError_1.CustomError('Wrong email!');
+            const { email, password } = req.body;
+            if (email !== process.env.admin_account ||
+                password !== process.env.admin_password) {
+                const error = new customError_1.CustomError('Wrong credentials!');
                 error.statusCode = 401;
                 throw error;
             }
