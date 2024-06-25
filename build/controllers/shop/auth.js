@@ -80,7 +80,7 @@ __decorate([
 ], CustomerAuthController.prototype, "signup", null);
 __decorate([
     catchError_1.catchError,
-    (0, decorators_1.get)('/login'),
+    (0, decorators_1.post)('/login'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)

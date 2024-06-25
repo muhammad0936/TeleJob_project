@@ -73,7 +73,7 @@ __decorate([
 __decorate([
     decorators_1.catchError,
     (0, decorators_1.requiredProps)('email', 'password'),
-    (0, decorators_1.get)('/login'),
+    (0, decorators_1.post)('/login'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
